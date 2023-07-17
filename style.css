@@ -1,0 +1,858 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(102.32deg, #030422 -2.74%, #090114 101.6%);
+    width: 1366px;
+    height: 768px;
+    position: relative;
+    border-radius: 20px;
+}
+
+.card-principal{
+    position: absolute;
+    width: 436px;
+    height: 608px;
+    border-radius: 20px;
+    left: calc(50% - 436px/2);
+    top: calc(50% - 608px/2);
+    background: #121214;
+    box-shadow: 0px 294px 118px rgba(0, 0, 0, 0.03), 0px 165px 99px rgba(0, 0,  0, 0.1), 0px 73px 73px rgba(0, 0, 0, 0.17), 0px 18px 40px rgba(0, 0, 0, 0.2), 0px 0px 0px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.card-principal:hover{
+    transform: scale(1.2);
+}
+
+.card-principal header{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    position: relative;
+    width: 263px;
+    height: 110px;
+    left: 40px;
+    top: 45px;
+    z-index: 1;
+}
+
+.card-principal header h1{
+    width: 263px;
+    height: 40px;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #ECE4EF;
+    text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.4);
+}
+
+.card-principal header p{
+    width: 263px;
+    height: 54px;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    color: #D8CEDE;
+}
+
+.card-principal main .veiculos{
+    width: 198px;
+    height: 74px;
+    z-index: 1;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    position: relative;
+    left: 40px;
+    top: 90px;
+}
+
+.card-principal main .veiculos h2{
+    width: 198px;
+    height: 18px;
+    font-family: 'Source Sans Pro';
+    color: #9C83A7;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.card-principal main .veiculos h3{
+    width: 198px;
+    height: 54px;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 130%;
+    color: #D8CEDE;
+}
+
+.card-principal main .especie{
+    position: relative;
+    display: flex;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 2px;
+    width: 198px;
+    height: 38px;
+    left: 40px;
+    top: 100px;
+
+}
+
+.card-principal main .especie h2{
+    width: 198px;
+    height: 18px;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #9C83A7;
+    display: flex;
+    align-items: center;
+}
+
+.card-principal main .especie h3{
+    width: 198px;
+    height: 18px;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 130%;
+    color: #D8CEDE;
+}
+
+.card-principal main .altura{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 2px;
+    width: 198px;
+    height: 38px;
+    z-index: 1;
+    left: 40px;
+    top: 120px;
+    position: relative;
+}
+
+.card-principal main .altura h2{
+    width: 198px;
+    height: 18px;
+    color: #9C83A7;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.card-principal main .altura h3{
+    width: 198px;
+    height: 18px;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 130%;
+    color: #D8CEDE;
+}
+
+.card-principal main .localidade{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 2px;
+    width: 198px;
+    height: 38px;
+    left: 40px;
+    top: 140px;
+}
+
+.card-principal main .localidade h2{
+    width: 198px;
+    height: 18px;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;  
+    color: #9C83A7;
+}
+
+.card-principal main .localidade h3{
+    width: 198px;
+    height: 18px;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 130%;
+    color: #D8CEDE;
+}
+
+.card-principal main .armas{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 2px;
+    width: 198px;
+    height: 56px;
+    left: 40px;
+    top: 160px;
+}
+
+.card-principal main .armas h2{
+    width: 198px;
+    height: 18px;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #9C83A7;
+}
+
+.card-principal main .armas h3{
+    width: 198px;
+    height: 36px;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 130%;
+    color: #D8CEDE;
+}
+
+.card-principal main .background{
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+}
+
+.card-principal main .background .background-image{
+    position: absolute;
+    height: 608px;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    background: linear-gradient(90.24deg, rgba(14, 23, 101, 0.45) 0%, rgba(53, 14, 88, 0.45) 98.1%), #121214;
+    width: 436px;
+    border-radius: 20px;
+    left: calc(50% - 436px/2);
+    top: calc(50% - 608px/2);
+}
+
+.card-principal main .background .background-character{
+    position: absolute;
+    width: 427px;
+    height: 558px;
+    right: -103px;
+    bottom: 0px;
+}
+
+.card-secundario{
+    position: absolute;
+    width: 348px;
+    height: 486.4px;
+    border-radius: 20px;
+    left: calc(50% - 860px/2);
+    top: calc(50% - 450px/2);
+    background: #121214;
+    box-shadow: 0px 294px 118px rgba(0, 0, 0, 0.03), 0px 165px 99px rgba(0, 0,  0, 0.1), 0px 73px 73px rgba(0, 0, 0, 0.17), 0px 18px 40px rgba(0, 0, 0, 0.2), 0px 0px 0px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    z-index: -1;
+    transition: transform 0.3s ease;
+}
+
+.card-secundario:hover{
+    transform: scale(1.2);
+}
+
+.card-secundario main .background{
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+}
+
+.card-secundario main .background .background-image{
+    position: absolute;
+    height: 486.4px;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    background: linear-gradient(90.24deg, rgba(14, 23, 101, 0.45) 0%, rgba(53, 14, 88, 0.45) 98.1%), #121214;
+    width: 348px;
+    border-radius: 20px;
+}
+
+.card-secundario main .background .background-character{
+    position: absolute;
+    width: 340px;
+    height: 400px;
+    right: -120px;
+    bottom: -15px;
+}
+
+.card-secundario main .background img{
+    width: 80%;
+}
+
+.card-secundario header{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 18px;
+    position: relative;
+    width: 263px;
+    height: 110px;
+    left: 40px;
+    top: 45px;
+    z-index: 1;
+}
+
+.card-secundario header h1{
+    width: 263px;
+    height: 40px;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 40px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #ECE4EF;
+    text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.4);
+}
+
+.card-secundario header p{
+    width: 200px;
+    height: 54px;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    color: #D8CEDE;
+}
+
+.card-secundario main .veiculos{
+    width: 198px;
+    height: 74px;
+    z-index: 1;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    position: relative;
+    left: 40px;
+    top: 75px;
+}
+
+.card-secundario main .veiculos h2{
+    width: 198px;
+    height: 18px;
+    font-family: 'Source Sans Pro';
+    color: #9C83A7;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.card-secundario main .veiculos h3{
+    width: 198px;
+    height: 54px;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 130%;
+    color: #D8CEDE;
+}
+
+.card-secundario main .especie{
+    position: relative;
+    display: flex;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 2px;
+    width: 198px;
+    height: 38px;
+    left: 40px;
+    top: 50px;
+
+}
+
+.card-secundario main .especie h2{
+    width: 198px;
+    height: 18px;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 18px;
+    color: #9C83A7;
+    display: flex;
+    align-items: center;
+}
+
+.card-secundario main .especie h3{
+    width: 198px;
+    height: 18px;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 130%;
+    color: #D8CEDE;
+}
+
+.card-secundario main .altura{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 2px;
+    width: 198px;
+    height: 38px;
+    z-index: 1;
+    left: 40px;
+    top: 60px;
+    position: relative;
+}
+
+.card-secundario main .altura h2{
+    width: 198px;
+    height: 18px;
+    color: #9C83A7;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 18px;
+}
+
+.card-secundario main .altura h3{
+    width: 198px;
+    height: 18px;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 130%;
+    color: #D8CEDE;
+}
+
+.card-secundario main .localidade{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 2px;
+    width: 198px;
+    height: 38px;
+    left: 40px;
+    top: 70px;
+}
+
+.card-secundario main .localidade h2{
+    width: 198px;
+    height: 18px;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 18px;  
+    color: #9C83A7;
+}
+
+.card-secundario main .localidade h3{
+    width: 198px;
+    height: 18px;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 130%;
+    color: #D8CEDE;
+}
+
+.card-secundario main .armas{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 2px;
+    width: 198px;
+    height: 56px;
+    left: 40px;
+    top: 80px;
+}
+
+.card-secundario main .armas h2{
+    width: 198px;
+    height: 18px;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 18px;
+    color: #9C83A7;
+}
+
+.card-secundario main .armas h3{
+    width: 198px;
+    height: 36px;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 130%;
+    color: #D8CEDE;
+}
+
+.card-terciario{
+    position: absolute;
+    width: 348px;
+    height: 486.4px;
+    border-radius: 20px;
+    left: calc(50% + 180px/2);
+    top: calc(50% - 450px/2);
+    background: #121214;
+    box-shadow: 0px 294px 118px rgba(0, 0, 0, 0.03), 0px 165px 99px rgba(0, 0,  0, 0.1), 0px 73px 73px rgba(0, 0, 0, 0.17), 0px 18px 40px rgba(0, 0, 0, 0.2), 0px 0px 0px rgba(0, 0, 0, 0.2);
+    z-index: -1;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.card-terciario:hover{
+    transform: scale(1.2);
+}
+
+.card-terciario main .background{
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+}
+
+.card-terciario main .background .background-image{
+    position: absolute;
+    height: 486.4px;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    background: linear-gradient(90.24deg, rgba(14, 23, 101, 0.45) 0%, rgba(53, 14, 88, 0.45) 98.1%), #121214;
+    width: 348px;
+    border-radius: 20px;   
+}
+
+.card-terciario main .background .background-character{
+    position: absolute;
+    width: 340px;
+    height: 400px;
+    right: -130px;
+    bottom: -30px;
+}
+
+.card-terciario main .background img{
+    width: 75%;
+}
+
+.card-terciario header{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 18px;
+    position: relative;
+    width: 263px;
+    height: 110px;
+    left: 40px;
+    top: 45px;
+    z-index: 1;
+}
+
+.card-terciario header h1{
+    width: 263px;
+    height: 40px;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 40px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #ECE4EF;
+    text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.4);
+}
+
+.card-terciario header p{
+    width: 200px;
+    height: 54px;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    color: #D8CEDE;
+}
+
+.card-terciario main .veiculos{
+    width: 198px;
+    height: 74px;
+    z-index: 1;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    position: relative;
+    left: 40px;
+    top: 80px;
+}
+
+.card-terciario main .veiculos h2{
+    width: 198px;
+    height: 18px;
+    font-family: 'Source Sans Pro';
+    color: #9C83A7;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.card-terciario main .veiculos h3{
+    width: 198px;
+    height: 54px;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 130%;
+    color: #D8CEDE;
+}
+
+.card-terciario main .especie{
+    position: relative;
+    display: flex;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 2px;
+    width: 198px;
+    height: 38px;
+    left: 40px;
+    top: 55px;
+
+}
+
+.card-terciario main .especie h2{
+    width: 198px;
+    height: 18px;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 18px;
+    color: #9C83A7;
+    display: flex;
+    align-items: center;
+}
+
+.card-terciario main .especie h3{
+    width: 198px;
+    height: 18px;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 130%;
+    color: #D8CEDE;
+}
+
+.card-terciario main .altura{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 2px;
+    width: 198px;
+    height: 38px;
+    z-index: 1;
+    left: 40px;
+    top: 60px;
+    position: relative;
+}
+
+.card-terciario main .altura h2{
+    width: 198px;
+    height: 18px;
+    color: #9C83A7;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 18px;
+}
+
+.card-terciario main .altura h3{
+    width: 198px;
+    height: 18px;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 130%;
+    color: #D8CEDE;
+}
+
+.card-terciario main .localidade{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 2px;
+    width: 198px;
+    height: 38px;
+    left: 40px;
+    top: 65px;
+}
+
+.card-terciario main .localidade h2{
+    width: 198px;
+    height: 18px;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 18px;  
+    color: #9C83A7;
+}
+
+.card-terciario main .localidade h3{
+    width: 198px;
+    height: 18px;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 130%;
+    color: #D8CEDE;
+}
+
+.card-terciario main .armas{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 2px;
+    width: 198px;
+    height: 56px;
+    left: 40px;
+    top: 75px;
+}
+
+.card-terciario main .armas h2{
+    width: 198px;
+    height: 18px;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 18px;
+    color: #9C83A7;
+}
+
+.card-terciario main .armas h3{
+    width: 198px;
+    height: 36px;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 130%;
+    color: #D8CEDE;
+}
+
+
+
+
+
+
+    
+
+
+
+
+
