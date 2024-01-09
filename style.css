@@ -8,6 +8,7 @@
 }
 
 body{
+    z-index: 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -29,10 +30,6 @@ body{
     background: #121214;
     box-shadow: 0px 294px 118px rgba(0, 0, 0, 0.03), 0px 165px 99px rgba(0, 0,  0, 0.1), 0px 73px 73px rgba(0, 0, 0, 0.17), 0px 18px 40px rgba(0, 0, 0, 0.2), 0px 0px 0px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
-}
-
-.card-principal:hover{
-    transform: scale(1.2);
 }
 
 .card-principal header{
